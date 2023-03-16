@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>My-Task</title>
+    <style>
+        div{
+            
+        }
+        body{
+            margin-top:0;
+            background-image: url("././assets/images/earh-view.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color:white;
+        }
+        h2{
+            text-align: center;
+        }
+            
+        #container {
+                    display: grid;
+                    width: 100%;
+                    height: 95vh;
+                    display: grid;
+                    grid-column: repeat(8,1fr);
+                    grid-template-columns: repeat(8 , 1fr);
+                    grid-template-rows: repeat(8 , 1fr);
+                    row-gap: 15px;
+                    column-gap: 15px;
+        }
+        #head{
+            grid-column: 1 / span 8;
+
+            border:2px solid tomato;
+        }
+        #nav1{
+            grid-row: 2 / span 7;
+            text-align: center;
+
+            border:2px solid tomato;
+        }
+        #nav1 ul{
+            list-style-type: none;
+            padding:0;
+        }
+        #frame{
+            grid-column: 2 / span 7;
+            grid-row: 2 / span 7;
+
+            border:2px solid tomato;
+        }
+        #window-view{
+            width: 100%;
+            height: 81vh;
+            border: none;
+        }
+        li {
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        ul div{
+            display: none;
+        }
+        ul:hover div{
+            display: block;
+            border:none;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="head">
+            <header>
+                <h2 class="heading">My Daily Training Tasks</h2>
+            </header>
+        </div>
+        <div id="nav1">
+            <div>
+                <ul>
+                    <li><h3>Day 1</h3></li>
+                    <div>
+                        <li><a title="./Day1/Resume.html" onclick="open_site()">Task1</a></li>
+                        <li><a title="./Day1/Table.html" onclick="open_site()">Task2</a></li>
+                    </div>
+                </ul>
+
+                <ul >
+                    <li><h3>Day 2</h3></li>
+                    <div>
+                        <li><a title="./Day2/chegg.html" onclick="open_site()">Task1</li>
+                        <li><a title="./Day2/html_format.html" onclick="open_site()">Task2</a></li>
+                    </div>
+                </ul>
+
+                <ul >
+                    <li><h3>Day 3</h3></li>
+                    <div>
+                        <li><a title="./Day3/Mad_Libs.html" onclick="open_site()">Task1</li>
+                        <li><a title="./Day3/table_form.html" onclick="open_site()">Task2</a></li>
+                        <li><a title="./Day3/Time_table.html" onclick="open_site()">Task3</a></li>
+                    </div>
+                </ul>
+
+                <ul >
+                    <li><h3>Day 4</h3></li>
+                    <div>
+                        <li><a title="./Day4/project_view.html" onclick="open_site()">Task1</li>
+                        <li><a title="./Day4/Form.html" onclick="open_site()">Task2</a></li>
+                        <li><a title="./Day4/nav_bar.html" onclick="open_site()">Task2</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div id="frame">
+            <div id="view">
+                <iframe id="window-view" src=""></iframe>
+            </div>
+        </div>
+
+        <script src="./assets/js/script.js"></script>
+
+    </div>
+</body>
+</html>

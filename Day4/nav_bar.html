@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Demo website</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                background: black;
+                
+            }
+            #menu{
+                display: flex;
+                background-color: rgb(74, 71, 71);
+                height: 50px;
+                align-items: center;  
+                padding: 10px;
+            }
+            nav{
+                display: flex;
+                font-size: 28px;
+                color:white;
+                float: right;
+            }
+            
+            #logo{
+                margin-left: 1%;
+            }
+            #navigation{
+                margin-left: 2%;
+                background-attachment: fixed;
+            }
+            a{
+                margin-left:18px;
+                font-size: 80%;
+            }
+            a:hover{
+                color:red;
+                cursor: pointer;
+            }
+            #logo h1 span{
+                color:red;
+            }
+            #logo h1 span:nth-child(2){
+                color: yellow;
+            }
+            #search{
+                position: absolute;
+                right: 4%;
+            }
+            #search input{
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            #content{
+                color: white;
+                font-size: x-large;
+            }
+            div{
+                color: aliceblue;
+            }
+            .card{
+                margin-top: 10vh;
+            }
+            #cards{
+                display: flex;
+                justify-content: center;
+            }
+            #card2{
+                display: none;
+                background-color: blue;
+            }
+            #card1{
+                background-color: yellow;
+            }
+            #card3{
+                display: none;
+                background-color: aqua;
+            }
+            #cards:hover #card2{
+                    display: flex;
+                
+            }
+            #cards:hover #card3{
+                    display: flex;
+                
+            }
+
+            .card{
+                height: 50vh; 
+                width: 50vw;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <div id="logo">
+             <h1 ><span>D</span>emo <span>W</span>eb</h1>
+            </div >
+            <div id="navigation">
+                <nav>
+                    <a >Home</a>
+                    <a>Career</a>
+                    <a>Technologies</a>
+                    <a>About</a>
+                </nav>
+            </div>
+            <div id="search">
+                <input type="search" placeholder="search">
+            </div>
+        </div>
+        <div id="web-body">
+            <div id="cards">
+                <div  id="card1" class="card" >
+                    
+                </div>
+                <div id="card2" class="card">
+                   
+                </div>
+                <div id="card3" class="card" >
+                
+                </div>
+
+            </div>
+            
+        </div>
+    </body>
+</html>

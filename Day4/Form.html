@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./assets/css/day4_task2_form.css">
+	</head>
+	<body>
+		<div style="border:2px solid black;background:linear-gradient(45deg, #073cd6, #a81313);">
+			<form autocomplete="off">
+				
+				<h1 style="text-align:center;color:deeppink;">Registration Form</h1>
+
+				<label for="fname" class="lab">First Name</label>
+				<div class="dv">
+				<img class="imag" src="./assets/images/contact.png" />
+				<input id="fname" class="inp" placeholder="first name" required/>
+				</div>
+
+				<label for="lname" class="lab">Last Name</label>
+				<div class="dv">
+				<img class="imag" src="./assets/images/contact.png" />
+				<input id="lname" class="inp" placeholder="last name" required/>
+				</div>
+
+				<label for="phone" class="lab">Phone</label>
+				<div class="dv">
+				<img class="imag" src="./assets/images/phone.jfif" />
+				<input id="phone" type="number" class="inp" placeholder="phone" required/>
+				</div>				
+
+				<label for="course" class="lab" >Course</label>
+				<div class="dv">
+				<img class="imag" src="./assets/images/3line.png" />
+				<select id="course" class="inp">					
+					<option>bca</option>
+					<option>mca</option>
+					<option>btech</option>
+				</select>
+				</div>
+
+				<label for="addr" class="lab" >Address</label>
+				<div class="dv">
+				<img class="imag" src="./assets/images/home.png" />
+				<textarea id="addr" class="inp" style="height:14%" placeholder="enter your address here"></textarea>
+				</div>
+					
+				<label class="d_lab">Gender</label><br>
+				<input id="mal"  type="radio" name="gender" value="male" required/>
+				
+				<label for="mal" class="d_lab">male</label>
+				<input id="fem" type="radio" name="gender" value="female" required/>
+				<label for="fem" class="d_lab">female</label>
+				
+				
+				
+				<label for="email" class="lab" style="margin-top: 1%;">Email</label>
+				<div class="dv">
+				<img class="imag" src="./assets/images/email.png" />
+				<input id="email" class="inp" type="Email" placeholder="example@mail.com" required/>
+				</div>
+				
+				<label for="password" class="lab">Password</label>
+				<div class="dv">
+				<img class="imag" src="./assets/images/lock.png" />
+				<input id="password"  class="inp" type="password" placeholder="password" required/>
+				</div>
+				<input class="btn" type="submit" style="font-size: large;" />
+			</form>
+		</div>
+		
+	<body>
+</html>

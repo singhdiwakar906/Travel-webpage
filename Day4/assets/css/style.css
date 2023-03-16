@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/earh-view.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div{
+    border:2px solid red;
+    display:flex;
+    width:100%;
+    height: 91vh;   
+}
+
+.header{
+    height:10%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+header h2{
+    height: 34px;
+}
+
+header{
+    height: 50px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    color: aquamarine;
+    background-color: black;
+    margin:0;
+    width: 100%;
+    border: 4px solid red;
+}
+
+aside{
+    border:2px solid red;
+    width:8%;
+    background:black;
+    padding:0;
+    min-width: 80px;
+} 
+li{
+    color: aliceblue;
+}
+h3,h2{
+    color: aquamarine;
+}
+ul{
+    padding-left:10px;
+}
+ul li{
+    list-style-type: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color:mediumblue;
+}
+iframe{
+    margin-left: 5px;
+    border:none;
+}
+aside div{
+    display: none;
+    height: fit-content;
+}
+ul:hover div{
+    display: block;
+    border:none;
+    cursor:pointer;
+}

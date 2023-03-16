@@ -1,0 +1,57 @@
+
+				body{
+					background-color:black; 
+					font-size:100%;
+
+					}
+				.inp{
+					width:100%;
+					height:5%;
+					margin-bottom:1.5%;
+					border:1.5px solid deeppink;
+					border-radius: 3px;
+					padding:6px;
+					}
+				.inp:focus{
+					outline: none;
+				}
+				
+				div{
+					padding:1%;
+					border-radius: 3px;
+					background-image: url('../images/dawn_background.jpg');
+				}
+				.lab{
+					display:block;
+					color:deeppink;
+					font-weight: 600;
+					}
+				.btn{
+					width: 100%;
+    					height: 7%;
+    					border: 2px solid #1bde1b;
+   					margin-top: 2%;
+					border-radius: 3px;
+					background: #00000057;
+					color:deeppink;
+					font-weight: 600;
+					}
+				.d_lab{
+					color:deeppink;
+					font-weight: 600;
+					}
+				
+				.dv{
+					display:flex;
+					}
+				.imag{
+					height: 29px;
+    					width: 43px;
+    					border: 1px solid deeppink;
+    					border-radius: 3px;
+    					margin-right: 4px;
+					}
+				input[type="submit"]:hover{
+						background-color: #1bde1b;
+				}
+					

@@ -1,0 +1,238 @@
+/* header is here */
+.left_margin{
+    margin-left: 4%;
+}
+h1{
+    font-size: 200%;
+}
+header{
+    height: 35px;
+    position: relative;
+}
+header nav img:first-child{
+    margin-left: 3%;
+    margin-top:0.5%;
+}
+
+header nav div{
+    display: inline;
+    float:right;
+    width:43%;
+    margin-top:0.5%;
+}
+.orange-border{
+    background-color: white;
+    border:none;
+    border:1.5px solid #ff9800c4;
+    color: #ff9800c4;
+    border-radius: 3px;
+}
+header nav div a{
+    margin-left:3%;
+}
+
+/* Section1    RENT A HOUSE*/
+#section1{
+    width:97vw;
+    height: 90vh;
+}
+#section1 div{
+    height: 81vh;
+    margin-left:2%;
+    float: left;
+    margin-top: 2%;  
+}
+#section1 div:first-child{
+    width: 39vw;
+}
+#section1 h1{
+    font-size: 289%;
+    margin-top: 28%;
+    margin-left: 9%;
+}
+#section1 p{
+    margin-top: -6%;
+    margin-left: 9%;
+}
+#section1 div:first-child img{
+    position: relative;
+    top:23vh;
+    left: -5%;   
+}
+#section1+div{
+    position: absolute;
+    left: 7vw;
+    bottom: 16%;
+    background-color: white;
+    padding:1%;
+    border: 2px solid #00000061;
+}
+.normal-input{
+    background-color:#e0e0e0;
+    height: 22px;
+    border:none;
+}
+#section1+div p{
+    margin-bottom: 3px;
+}
+.orange-btn{
+    color:white;
+    background-color: #ff9800c4;
+    border:none;
+    height: 30px;
+} 
+
+/* section 2   DISCOVER YOUR PERFECT HOME*/
+#section2{
+    display: inline-block;
+    height: 50vh;
+    width: 97vw;
+    margin-top:2%;
+}
+#section2 div{
+    height: 250px;
+    float: left;
+}
+#section2>div:first-child{
+    padding-left: 4%;
+    width: 28%;
+    margin: 0px 5% 0 3%;  
+}
+.top-gap{
+    margin-top: 33%;
+    width: 150px;
+}
+#section2 img{
+    width: 100%;
+    height: 20vw;;
+}
+#section2 div div{
+    margin-left: 20px;
+    width:190px;
+}
+#section2-last-div{
+    width: 25px
+}
+
+/* Section3   OUR 2 SERVICES*/
+#section3{
+    position: relative;
+    height: 100vh;
+}
+#section3 div{
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+}
+#section3 div div{
+    height: 30%;
+    width: 35%;
+    padding:2%;
+    float:left;
+}
+.section3-details{
+    background: linear-gradient(90deg, #d6d1d1, transparent);
+    position: relative;
+    top: 80px;
+}
+.section3-details>img:first-child{
+    position: absolute;
+    left:78vw;
+    top:-25vh;
+    z-index: -1;
+}
+.section3-details>img+img{
+    position: absolute;
+    top:85%;
+    left:-10%;
+}
+
+/* section 4  FEATURED PROPERTIES*/
+#section4{
+    height: 134vh;
+}
+.card-row1{
+    float:left;
+    width:25vw;
+    margin:0% 0% 0% 6% ;
+    position: relative;
+}
+.card-desc h3{
+    color:orange;
+}
+.card-desc>img{
+    position: absolute;
+    top: 0;
+}
+#section4+div button{
+    width:15vw;
+}
+
+/* section 5   WHAT PEOPLE  SAY ABOUT US*/
+#section5{
+    height: 60vh;
+    width: 92vw;
+    padding:30px;
+}
+#section5>div{
+    width: 49%;
+}
+#section5>h2{
+    margin-top:2%;
+}
+#section5>div>img{
+    float:left;
+    width: 80%;
+    margin-left: 10vw;   
+}
+#section5 div+div{
+    width: 40%;
+    float:right;
+    padding:2%;
+}
+#section5 div+div h3{
+    margin-top: 15%;
+}
+
+/* section 6  GET CONNECTED */
+#section6{
+    background-color: orange;
+    color:white;
+    margin-top:5vw;
+    border-radius: 6px;
+    height: 36vh;
+}
+#section6>div:first-child{
+    width: 60vw;
+    padding: 3%;
+}
+#section6 button{
+    float: right;
+    position: relative;
+    bottom: 133px;
+    right: 13vw;
+    height: 36px;
+    width: 141px;
+    color: #130101;
+    background: #fffefd;
+    border: none;
+}
+
+/* Footer css here*/
+footer{
+    background-image: url("./Images/footer.webp");
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    margin-top:4vw;
+}
+footer div{
+    display: inline;
+    width: fit-content;
+    float:right;
+    width:25%;
+}
+footer div li{
+    list-style-type: none;
+    width: fit-content;
+}

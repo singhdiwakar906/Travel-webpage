@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table_Form</title>
+    </head>
+    <body>
+        <form>
+            <table border="0" cellspacing="0" align="center" width="90%" bgcolor="#58cda5">
+                    <tr>
+                            <td>
+                                    <table  cellspacing="0" cellpadding="15" align="center" bgcolor="white">
+                                            <tr>
+                                                <td colspan="2" align="center">
+                                                        Let us Know how we can improve freeCodeCamp
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td align="right" width="50%">
+                                                        Name
+                                                </td>
+                                                <td align="left">
+                                                    <input placeholder="Enter your name" type="text" name="name" required/>
+                                                </td>
+                                            </tr>
+
+                                            <tr >
+                                                <td align="right" width="50%">
+                                                        Email
+                                                </td>
+                                                <td align="left">
+                                                    <input  placeholder="Enter your Email" type="email" name="email" required />
+                                                </td>
+                                            </tr>
+
+                                            <tr >
+                                                <td align="right" width="50%">
+                                                        Age
+                                                </td>
+                                                <td align="left">
+                                                    <input  placeholder="Age" name="age" type="number" min="16" max="100" required />
+                                                </td>
+                                            </tr>
+
+                                            <tr >
+                                                <td align="right" width="50%">
+                                                        which option best describes your current role ?
+                                                </td>
+                                                <td align="left">
+                                                    <select id="current-role">
+                                                        <option value="student">Student</option>
+                                                        <option value="working-proff">working Proff</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+
+                                            <tr >
+                                                <td align="right" width="50%">
+                                                        How likely you will recommend freecodercamp to a friend
+                                                </td>
+                                                <td align="left">
+                                                    <input  id="def" type="radio" name="choice" value="Definately" required/>
+                                                    <label for="def">Definately</label>
+                                                    <br>
+                                                    <input  id="mb" type="radio" name="choice" value="Maybe" required/>
+                                                    <label for="mb">Maybe</label>
+                                                    <br>
+                                                    <input  id="ns" type="radio" name="choice" value="Not-sure" required/>
+                                                    <label for="ns">Not sure</label>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td align="right" width="50%">
+                                                        what do you like most about FCC
+                                                </td>
+                                                <td align="left">
+                                                    <select id="most-liked">
+                                                        <option >Select an option</option>
+                                                        <option value="content">Content</option>
+                                                        <option value="vido explination">video Explination</option>
+                                                        <option value="Presentation way">Presentation way</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td align="right" width="50%">
+                                                        Thing that should be improved in the future (check all that apply)
+                                                </td>
+                                                <td align="left">
+                                                    <input id="Fe" value="Front-end Projects" type="checkbox"/>
+                                                    <label for="Fe">Front-end Projects</label>
+                                                    <br>
+                                                    <input id="Be" value="Back-end Projects" type="checkbox"/>
+                                                    <label for="Be">Back-end Projects</label>
+                                                    <br>
+                                                    <input id="Dv" value="Data Visualization" type="checkbox"/>
+                                                    <label for="Dv">Data Visualization</label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <input type="submit"/>
+                                                </td>
+                                            </tr>
+                                    </table>
+                            </td>
+                    </tr>
+            </table>
+        </form>
+    </body>
+</html>
