@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    /* border: 2px solid black; */
+}
+
+.section-cont{
+    height: 100vh;
+    border:2px solid greenyellow;
+    background: rgb(7, 7, 7);
+}
+.main-cont{
+    color: white;
+    margin: 5% auto;
+    padding: 21px 0;
+    width: 80%;
+    border: 2px solid rgba(255, 255, 255, 0.441);
+    border-radius: 20px;
+
+}
+.center-cnt{
+    margin: 15px auto;
+    width: 90%;
+}
+.center-text{
+    text-align: center;
+}
+.relative-box{
+    position: relative;
+}
+#progress-bar>div{
+    height: 20px;
+    background-color: white;
+    width:27%;
+    margin: 15px 0;
+    border: 2px solid red;
+    transition: 2s width;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    margin: 8px 0;
+    padding:1%;
+}
+input[type="checkbox"]{
+    width: 10%;
+    height: 15px;
+    margin:8px 0px;
+
+}
+span{
+    color:red;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    right: 8px;
+    top: 32px;
+}
+
+button{
+    width: 61px;
+    height: 30px;
+    border-radius: 29px;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-weight:800px;
+}
+button:hover{
+    background-color: lawngreen;
+    color: white;
+    
+}
+
+/* main-logic  css*/
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+/* .progress{
+    background-color: white;
+    width:40%;
+    margin: 15px 0;
+} */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud operations</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+    input, select {
+        width: 12%;
+        height: 20px;
+        padding: 0 11px;
+    }
+    tr:hover{
+        cursor:move;
+    }
+    #display-data-cnt-2{
+        min-height: 60px;
+        border: 1px solid black;
+        width: 80%;
+        margin: 20px 0;
+    }
+    #display-data-cnt-3 {
+        min-height: 42px;
+        width: 100%;
+        
+    }
+    </style>
+</head>
+<body>
+    <div id="getData-cnt">
+        <div>
+            <h1>fetching data using get method</h1>
+        </div>
+        <!-- <div id="control-cnt">
+            <button id="fetchData">Fetch Data</button>
+        </div> -->
+        <div id="display-data-cnt">
+            <table id="display-data" border="1" cellspacing="0" cellpadding="10">
+                    
+            </table>
+        </div>
+        <div id="display-data-cnt-2">
+            <table id="display-data-cnt-3" border="0" cellspacing="0" cellpadding="10"  ondrop="dropDrag()" ondragover="overDrag()">
+            </table>
+        </div>
+    </div>
+
+    <div id="posData-cnt">
+        <div><h1>Post-data/put-data</h1></div>
+        <form>
+            <input type="text" id="fname" name="first_name" placeholder="first_name" required>
+            <input type="text" id="lname" name="last_name" placeholder="last_name" required>
+            <input type="number" id="phone" name="phone" placeholder="phone-number" required>
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <input type="button" value="send" id="form-submit">
+            <input type="button" value="update" id="update-api">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url(../images/dawn_background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+#title{
+    color: rgb(254, 251, 251);
+    font-size: 180%;
+    text-align: center;
+    margin-top: -25%;
+}
+.dv{
+    display: block;
+    padding: 20%;
+    border-radius: 5px;
+    
+}
+.dv1{
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    background:transparent
+}
+#one{
+    display:block;
+    padding: 5%;
+    margin-top: -5%;
+    width: 90%;
+    border-radius: 24px;
+    border: 2px solid white;
+}
+#two{
+    
+    display:none;
+    padding: 5%;
+    margin-top: -10%;
+    border-radius: 24px;
+    border: 2px solid white;
+}
+#three{
+    display: none;
+    height: auto;
+    padding: 2%;
+}
+#four{
+    display: none;
+    padding: 2%;
+    
+}
+#five{
+    display: none;
+    padding: 2%;
+    border-radius: 24px;
+    color: white;
+    border: 2px solid white;
+}
+#reset{
+        margin-left: 48%;
+    }
+.gen{
+    display: inline-flex;
+}
+.inp{
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 25px;
+    outline-color: #0505ef;
+    padding: 2%;
+    background-color: #E8F0FE;
+    
+}
+button{
+    text-align: center;
+    align-items: center;
+    margin-left: 47%;
+    width: 50px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+.button_f{
+    margin-left: 0%;
+}
+.lab{
+    color:azure;
+    font-weight: 600;
+}
+
+@media screen and (max-width:480px){
+    .dv{
+        height: 100%;
+        background-size:cover;
+    }
+
+    .inp{
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 5%;
+    outline-color: #0505ef;
+    padding: 2%;
+    background-color: #E8F0FE;
+    }
+
+    button {
+        text-align: center;
+        align-items: center;
+        width: 50px;
+        border-radius: 6px;
+        border: 2px solid white;
+        margin-left: 40%;
+    }
+    #prev{
+        margin-left: 28%;
+    }
+    #reset{
+        margin-left: 40%;
+    }
+}

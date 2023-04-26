@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>step form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </head>
+    <body>
+        
+        <div class="dv">
+            <h6 style="color:rgb(254, 251, 251);" id="title">Registration Form</h6>
+            <div>
+                
+                <div class="dv1" id="one" style="height: auto;">
+                    <label for="fname" class="lab">First-name</label>
+                    <input id="fname" class="inp inp1" type="text" placeholder="first-name" autocomplete="false" required></input>
+                    <label for="lname" class="lab">Last-name</label>
+                    <input id="lname"  class="inp inp1" type="text" placeholder="last-name" required></input>
+                    <label for="phone" class="lab">Phone</label>
+                    <input id="phone"  class="inp inp1" type="tel" placeholder="phone" required></input>
+                    <label for="email" class="lab">Email</label>
+                    <div id="email-cnt">
+                        <input id="email-0"  class="inp inp1" type="email" placeholder="email" required></input>
+                        <input id="add" type="button" value="+">
+                    </div>
+                    <button id="btn1-next">Next</button>
+                </div>
+                
+               
+                <div class="dv1" id="two" style="height:auto;margin-top: -5%;">
+                    <label for="age" class="lab">Age</label>
+                    <input id="age"  class="inp inp2" type="number" min="18" max="250" placeholder="age" required="" style="margin-bottom: 1%;">
+                    <label for="gender" style="color:white;">Gender</label><br>
+                    <div class="gen">
+                        <input id="mal" type="radio" name="gender" checked required>
+                        <label for="mal" style="color:white;">male</label>
+                    </div>
+                    <div class="gen">
+                        <input id="fem" name="gender" type="radio"  required>
+                        <label for="fem" style="color:white;">female</label>
+                    </div>
+                    <br>
+                    <label for="uname" class="lab">User-name</label>
+                    <input id="uname"  class="inp inp2" placeholder="username" autocomplete="off" required></input>
+                    <label for="passw" class="lab">Password</label>
+                    <input id="passw"  class="inp inp2" placeholder="password" type="password" required></input>
+                    <label for="repassw" class="lab">Retype-password</label>
+                    <input id="repassw"  class="inp inp2" placeholder="re type password" type="password" required></input>
+                    <br>    
+                    <button id="prev" >Prev</button>
+                    <button id="btn2-next" class="button_f"  style="margin-left: 0%;width: 50px;
+                    border-radius: 6px;border:2px solid white;">Finish</button>
+                    </div>
+                    <div class="dv1" id="five" style="height: auto;">
+                    <p id="ans"></p>
+                    <button id="reset" type="reset" >reset</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+
+</html>

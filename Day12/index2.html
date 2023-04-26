@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <script src="script2.js"></script>
+    
+    <section id="section1" class="section-cont">
+        <div id="main-cont" class="main-cont">
+            <div id="dark-mode-cnt">
+                <img src="./classes-dark-mode-icon.png" alt="dark mode image" onclick="darkMode()">
+            </div>
+            <div id="head-cont" class="center-cnt">
+                <div id="heading" class="center-text">
+                    <h1>Resume creator</h1>
+                    <P>Fill all form field to go next step</P>
+                </div>
+                
+                <div id="progress-bar" class="progress">
+                    <div id="progressbar"></div>
+                </div>
+            </div>
+            <form action="">
+                    <div id="body-cont" class="center-cnt">
+                        <div id="step1" class="show">
+                            <div class="relative-box">
+                                <label for="fname">First name</label><br>
+                                <input type="text" name="fname" id="fname" placeholder="First name" onblur="validate()" class="step-1" autofocus>
+                                <span name="fname">*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label for="lname">Last name</label><br>
+                                <input type="text" name="lname" id="lname" placeholder="Last name" onblur="validate()" class="step-1">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label for="age">Age</label><br>
+                                <input type="number" name="age" id="age" placeholder="age" onblur="validate()" class="step-1">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label name="Gender" id="gender">Gender</label> <span>*field-required</span><br>
+                                <label for="male">male</label>
+                                <input type="radio" id="male" name="choice" checked>
+
+                                <label for="female">female</label>
+                                <input type="radio" id="female" name="choice">
+                            </div>
+                            <div class="center-text">
+                                <button id="btn-1" onclick="main_control()" value="next" class="step-1">Next</button>
+                            </div>
+                        </div>
+
+                        <div class="hide" id="step2">
+                            <div class="relative-box">
+                                <label for="email">Email</label><br>
+                                <input type="email" name="email" id="email" placeholder="email" onblur="validate()" class="step-2">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label for="phone">Phone-number</label><br>
+                                <input type="number" name="phone" id="phone" max-length="10" placeholder="Phone number" onblur="validate()" class="step-2">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="center-text">
+                                <button onclick="change_step()" value="prev">Prev</button>
+                                <button id="btn-2" class="step-2" onclick="main_control()" value="next" >Next</button>
+                            </div>
+                        </div>
+                        
+                        <div class="hide" id="step3">
+                            <div id="add-cnt" class="full-box relative-box" >
+                                <button id="add" onclick="Add_Edu()">+</button>
+                            </div>
+                            <div id="edu-details">
+                                <div id="edu-details1">
+                                    <div class="relative-box" id="univ_cnt1">
+                                        <label for="university_name1">University Name</label><br>
+                                        <input type="text" name="u_name" id="university_name1" placeholder="university name" onblur="validate()" class="step-3">
+                                        <span>*field-required</span>
+                                    </div>
+                                    <div class="relative-box" id="deg_cnt1">
+                                        <label for="Degree_name1">Degree Name</label><br>
+                                        <input type="text" name="Deg_name" id="Degree_name1" placeholder="Degree name" onblur="validate()" class="step-3">
+                                        <span>*field-required</span>
+                                    </div>
+                                    <div class="relative-box" id="year_cnt1">
+                                        <label for="pass-year">Year of passing</label><br>
+                                        <input type="month" name="pass-year" id="pass_yeare1" max-length="10" placeholder="passing year" onblur="validate()" class="step-3">
+                                        <span>*field-required</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center-text">
+                                <button onclick="change_step()" value="prev">Prev</button>
+                                <button id="btn-3" class="step-3" onclick="main_control()" value="next" >Next</button>
+                            </div>
+                        </div>
+
+                        <div class="hide" id="step4">
+                            <div class="relative-box">
+                                <div class="relative-box" id="comp_name">
+                                    <label for="c_name">Company Name</label><br>
+                                    <input type="text" name="c_name" id="c_name1" placeholder="company name" onblur="validate()" class="step-4">
+                                    <span>*field-required</span>
+                                </div>
+                                <div class="relative-box" id="start-date">
+                                    <label for="start-date1">Start Date</label><br>
+                                    <input type="date" name="start-date1" id="start_date1" placeholder="start date" onblur="validate()" class="step-4">
+                                    <span>*field-required</span>
+                                </div>
+                                <div class="relative-box" id="pass-year">
+                                    <label for="pass-year">End Date</label><br>
+                                    <input type="date" name="end-date" id="end-date"  placeholder="end-date" onblur="validate()" class="step-4">
+                                    <span>*field-required</span>
+                                </div>
+                                <div class="relative-box" id="designation">
+                                    <label for="designation1">Designation</label><br>
+                                    <input type="text" name="pass-year" id="designation1"  placeholder="designation" onblur="validate()" class="step-4">
+                                    <span>*field-required</span>
+                                </div>
+
+                                <div class="center-text">
+                                    <button onclick="change_step()" value="prev">Prev</button>
+                                    <button id="btn-4" class="step-4" onclick="main_control()" value="next" >Finish</button>
+                                </div>
+                                <script>
+
+                                    let arrx=document.getElementsByTagName('input');
+
+                                    for(let i=0;i<arrx.length;i++){
+                                    console.log(arrx[i]);
+                                    arrx[i].addEventListener('click',onClick_rem);
+                                    }
+                                   
+                                </script>
+
+                            </div>
+                        </div>
+
+                        <!-- Resume Template -->
+                        <div class="hide" id="step5">
+                            <div id="resume-cnt">
+                                <div id="resume-head">
+                                    <h3>[ Resume-Prototype ]</h3>
+                                </div>
+                                <div id="resume-body">
+                                    <div id="details_d">
+                                        <table >
+                                            <tr>
+                                                <td width="100%">
+                                                    <h1 id="fname_d"></h1>
+                                                    <span></span>
+                                                    <h1 id="lname_d" class="data"></h1>
+                                                    <!-- <h1></h1> -->
+                                                    <h3>Age : <span id="age_d" class="data"></span></h3>
+                                                    <h3>Contact : <span id="phone_d" class="data"></span></h3>
+                                                    <h3>Email : <span id="email_d" class="data"></span></h3>
+                                                </td>
+                                                
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div>
+                                        <h2>
+                                            Education
+                                        </h2>
+                                        <hr>
+                                        <table border="2" width="100%" id="course_det_d">
+                                            <tr>
+                                                <th>Degree</th>
+                                                <th>Board/University</th>
+                                                <th>Year</th>
+                                            </tr>
+                    
+                                        </table>
+                                    </div>
+
+                                    <div id="job_det_d">
+                                        <h2>
+                                            Work experience
+                                        </h2>
+                                        <hr>
+                                        <table border="2" width="100%">
+                                            <tr>
+                                                <th>Company Name</th>
+                                                <th>Designation</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                            </tr>
+                    
+                                            <tr >
+                                                <td id="c_name1_d">MCA</td>
+                                                <td id="designation1_d">Gehu Uttarakhand</td>
+                                                <td id="start_date1_d">2021-2023</td>
+                                                <td id="end-date_d">2021-2023</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="center-text">
+                                        <button onclick="show_Resume()" hidden>Auto Fill</button>
+                                        <button onclick="change_step()" value="prev">Prev</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+

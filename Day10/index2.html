@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script2.js"></script>
+</head>
+<body>
+    <section id="section1" class="section-cont">
+        <div id="main-cont" class="main-cont">
+            <div id="head-cont" class="center-cnt">
+                <div id="heading" class="center-text">
+                    <h1>SIGN UP YOUR USER ACCOUNT</h1>
+                    <P>Fill all form field to go next step</P>
+                </div>
+                <div id="icons">
+                    <div><i class="fa fa-unlock"></i></div>
+                    <div><i class="fa fa-user"></i></div>
+                    <!-- <div><i class="fa fa-camera"></i></div> -->
+                    <div><i class="fa fa-check"></i></div>
+                    <div id="rule"></div>
+                </div>
+                <div id="progress-bar" class="progress">
+                    <div id="progressbar"></div>
+                </div>
+            </div>
+            <form action="">
+                    <div id="body-cont" class="center-cnt">
+                        <div id="step1" class="show">
+                            <div class="relative-box">
+                                <label for="fname">First name</label><br>
+                                <input type="text" name="fname" id="fname" placeholder="First name" onblur="validate()" class="step-1">
+                                <span name="fname">*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label for="lname">Last name</label><br>
+                                <input type="text" name="lname" id="lname" placeholder="Last name" onblur="validate()" class="step-1">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label for="age">Age</label><br>
+                                <input type="number" name="age" id="age" placeholder="age" onblur="validate()" class="step-1">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label name="Gender" id="gender">Gender</label> <span>*field-required</span><br>
+                                <label for="male">male</label>
+                                <input type="radio" id="male" name="choice" checked>
+
+                                <label for="female">female</label>
+                                <input type="radio" id="female" name="choice">
+                            </div>
+                            <div class="center-text">
+                                <button id="btn-1" onclick="main_control()" value="next" class="step-1">Next</button>
+                            </div>
+                        </div>
+
+                        <div class="hide" id="step2">
+                            <div class="relative-box">
+                                <label for="email">Email</label><br>
+                                <input type="email" name="email" id="email" placeholder="email" onblur="validate()" class="step-2">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label for="phone">Phone-number</label><br>
+                                <input type="number" name="phone" id="phone" max-length="10" placeholder="Phone number" onblur="validate()" class="step-2">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="center-text">
+                                <button onclick="change_step()" value="prev">Prev</button>
+                                <button id="btn-2" class="step-2" onclick="main_control()" value="next" >Next</button>
+                            </div>
+                        </div>
+                        
+                        <div class="hide" id="step3">
+                            <div class="relative-box">
+                                <label for="email">password</label><br>
+                                <input type="password" name="password" id="password" placeholder="password" onblur="validate()" class="step-3">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="relative-box">
+                                <label for="phone">re-type password</label><br>
+                                <input type="password" name="password" id="password" max-length="10" placeholder="retype password" onblur="validate()" class="step-3">
+                                <span>*field-required</span>
+                            </div>
+                            <div class="center-text">
+                                <button onclick="change_step()" value="prev">Prev</button>
+                                <button id="btn-2" class="step-3" onclick="submition()" value="next" >Submit</button>
+                            </div>
+                        </div>
+
+                        <div class="hide" id="step4">
+                            <div class="relative-box">
+                                <p id="result"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </form>
+    </section>
+</body>
+</html>

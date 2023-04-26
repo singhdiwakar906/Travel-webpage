@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_comp</title>
+    <style>
+        .add{
+            background-color: lawngreen;
+        }
+        #submit{
+            background-color: #0059f4;
+        }
+        .sub{
+            background-color: rgb(255, 115, 0);
+        }
+        button{
+            color: white;
+            border: none;
+            height: 23px;
+        }
+        
+        form{
+            border: 2px solid black;
+            margin: 5px 0px;
+        }
+        input{
+            margin: 5px 5px;
+        }
+        input[placeholder="sr-no."]{
+            width:50px;
+        }
+        span{
+            width: 80px;
+            display: inline-block;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="add" class="add">ADD</button>
+    <div>
+        <h2>Student's sheet</h2>
+        <form action="#" id="st-form">
+            <div id="student-records">
+                <div id ="student-record1">
+                    <input type="number" placeholder="sr-no." value="1">
+                    <input type="text" class="inp-name" id="inp_name1" placeholder="name">
+                    <input type="number" class="inp-age" id="inp_age1" placeholder="age">
+                    <input type="number" class="rollno" id="rollno1" placeholder="rollno">
+                    <span id="span1"></span>
+                    <button class="sub" id="sub1" disabled>REMOVE</button>
+                </div>
+            </div>
+            <div id="submittion">
+                <button type="submit" onclick="validate()" id="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('add').addEventListener('click',addRecord);
+        var bt_count = 1;
+        function addRecord(){
+            event.preventDefault();
+            bt_count++;
+            console.log(bt_count);
+            let button_count = "sub"+bt_count ; 
+            let record = `<div id="student-record${bt_count}">\n <input type="number" placeholder="sr-no." value="${bt_count}"><input type="text" id="inp_name${bt_count}" class="inp-name" placeholder="name"><input type="number" id="inp_age${bt_count}" class="inp-age" placeholder="age"><input type="number" id="rollno${bt_count}" class="rollno" placeholder="rollno"><span id="span${bt_count}"></span><button class="sub" id=${button_count}>REMOVE</button>\n </div>`;
+            document.getElementById("student-records").innerHTML+=record;
+
+            let sub = document.getElementsByClassName("sub");
+            for(i in sub){
+                sub[i].addEventListener('click',removeRecord);
+                console.log(sub[i]);
+            }
+        }
+        function validate(){
+            console.log("validating");
+            // event.preventDefault();
+            let inp_name = document.getElementsByClassName('inp-name');
+            let inp_age = document.getElementsByClassName('inp-age');
+            let rollno = document.getElementsByClassName('rollno');
+
+            for(let i=0;i<bt_count;i++){
+                console.log(inp_name[i].value,inp_age[i].value,rollno[i].value);
+                let span_name = "span"+(i+1);
+                if(inp_name[i].value=="" || inp_age[i].value=="" || rollno[i].value==""){
+                    console.log(span_name);
+                    document.getElementById(span_name).innerHTML="required*";
+                }
+                else{
+                    document.getElementById(span_name).innerHTML="";
+                }
+            }
+        }
+        function removeRecord(){
+            // in devoloping phase
+            let btn_count = event.target.id.substr(3,1);
+            document.getElementById('student-record'+btn_count).remove()
+            
+        }
+        
+
+    </script>
+</body>
+</html>

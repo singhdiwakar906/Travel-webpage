@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+  <style>
+
+    div {
+
+      margin-top: 5px;
+
+    }
+
+
+
+
+    .container {
+
+      display: flex;
+
+    }
+
+
+
+
+    .left div {
+
+      border: 2px solid;
+
+      padding: 20px;
+
+      width: 300px;
+
+    }
+
+
+
+
+    .left {
+
+      border: 2px solid;
+
+      flex-wrap: wrap;
+
+      width: 50%;
+
+      padding: 20px;
+
+    }
+
+  </style>
+
+
+
+
+
+  <div class="container">
+
+
+
+
+
+    <div class="left">
+
+      <div id="1" draggable="true" ondragstart="dragStart(event)" ondrop="drop(event)"
+
+        ondragover="allowDrop(event)">1
+
+      </div>
+
+
+
+
+      <div id="2" draggable="true" ondragstart="dragStart(event)" ondrop="drop(event)"
+
+        ondragover="allowDrop(event)">2
+
+      </div>
+
+      <div id="3" draggable="true" ondragstart="dragStart(event)" ondrop="drop(event)"
+
+        ondragover="allowDrop(event)">3
+
+      </div>
+
+      <div id="4" draggable="true" ondragstart="dragStart(event)" ondrop="drop(event)"
+
+        ondragover="allowDrop(event)">4
+
+      </div>
+
+      <div id="5" draggable="true" ondragstart="dragStart(event)" ondrop="drop(event)"
+
+        ondragover="allowDrop(event)">5
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="left">
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  <script>
+
+
+
+
+
+    function allowDrop(ev) {
+
+
+
+
+      ev.preventDefault();
+
+    }
+
+
+
+
+    function dragStart(ev) {
+
+
+
+
+
+      let { index, selector } = getIndex(ev.target.id);
+
+
+
+
+      console.log("currentIndex", index);
+
+      ev.dataTransfer.setData("set", index);
+
+      ev.dataTransfer.setData("selector", selector.id);
+
+
+
+
+
+
+    }
+
+
+
+
+
+    function getIndex(ind) {
+
+
+
+
+
+      let index = 0;
+
+      let selector = null;
+
+      let element = document.getElementsByTagName("div");
+
+
+
+
+      for (let i = 0; i < element.length; i++) {
+
+
+
+
+        if (element[i].id == ind) {
+
+          index = i;
+
+          selector = element[i];
+
+          break;
+
+        }
+
+
+
+
+      }
+
+
+
+
+      return { index, selector };
+
+
+
+
+    }
+
+
+
+
+    function drop(ev) {
+
+      console.log("ev", ev);
+
+
+
+
+      let { index, selector } = getIndex(ev.target.id);
+      console.log("idx",ev.target.id);
+
+
+
+      let oldIndex = ev.dataTransfer.getData("set");
+
+      let oldSelector = ev.dataTransfer.getData("selector");
+
+
+
+
+      if (index < oldIndex) {
+
+        ev.target.before(document.getElementById(oldSelector));
+
+
+
+
+      } else {
+
+        ev.target.after(document.getElementById(oldSelector));
+
+      }
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+  </script>
+
+
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+<section id="section-1">
+
+    <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="./assets/images/logo.png" alt="logo" width="250">
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="login">
+                            <button id="login-btn">Login</button> 
+                    </li>
+                    <li id="sign-up">
+                            <button id="sign-up-btn">sign-up</button>
+                    </li>
+                    <li id="lang">
+                        <button name="lang" id="lang">
+                            EN
+                            <span class="caret"></span>
+                        </button>
+                    </li>
+                    <li id="ham-menu">
+                        <label for="check">
+                            <img src="./assets/images/3line-menu.png" alt="hamburger-menu" id="threeline" width="60">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <div id="title1" class="center-box">
+        <h1>Travel the world with the local partner that matches your vibe!</h1>
+    </div>
+
+    <div id="form1" class="center-box">
+        <form action="">
+            <div id="social-links">
+                <img src="./assets/images/social_media.png" alt="facebook-twitter">
+            </div>
+            
+            <div id="gender-cnt" class="center-box">
+                <div>
+                    <label for="gender-detail">I'm a:</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="opt-man">
+                    <label for="opt-man">Man</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="gender" id="opt-woman">
+                    <label for="opt-woman">Woman</label>
+                </div>
+
+            </div>
+
+            <div id="details-cnt">
+                <div id="inp-cnt1">
+                    <div class="astrick-cnt">
+                        <p>*</p>
+                    </div>
+                    <div id="inp1-cnt" class="inp-cnt">
+                        <input type="text" name="inp-name" id="inp1" class="form-control" placeholder="Name">
+                    </div>
+                </div>
+    
+                <div id="inp-cnt2">
+                    <div class="astrick-cnt">
+                        <p>*</p>
+                    </div>
+                    <div id="inp2-cnt" class="inp-cnt">
+                        <input type="text" name="inp-name" id="inp2" class="form-control" placeholder="E-mail">
+                    </div>
+                </div>
+                <div id="inp-cnt3">
+                    <div class="astrick-cnt">
+                        <p>*</p>
+                    </div>
+                    <div id="inp3-cnt" class="inp-cnt">
+                        <input type="text" name="inp-name" id="inp3" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div id="inp-cnt4">
+                    <div class="astrick-cnt">
+                        <p>*</p>
+                    </div>
+                    <div id="inp4-cnt" class="inp-cnt">
+                        <input type="text" name="inp-name" id="inp4" class="form-control" placeholder="Paris-France">
+                    </div>
+                </div>
+            </div>
+
+            <div id="link-cnt">
+                <a href="">Wrong Place? choose an other</a>
+            </div>
+            <div id="date-cnt">
+                <select name="day" id="day-btn" class="btn-default" value="Day">
+                    <option value="Day0">Day</option>
+                </select>
+                <select name="month" id="day-btn" class="btn-default">
+                    <option value="Day0">Month</option>
+                </select>
+                <select name="year" id="day-btn" class="btn-default">
+                    <option value="Day0">Year</option>
+                </select>
+            </div>
+            <div id="filed-req">
+                <p>* All fields are required</p>
+            </div>
+            <div id="policy">
+                <p>By continuig, you're confirming that you've read and agree to our Terms and <a href="">Conditions</a> and <a href="">Privacy Policy</a></p>
+            </div>
+            <div id="submit-cnt">
+                <button class="btn btn-danger submit-btn">Let's go</button>
+            </div>
+
+        </form>    
+    </div>
+</section>
+
+<section id="sec2">
+
+    <div id="pentagon-head1" class="pentagon-head container-fluid">
+        <div class="pentagon-title"><h1>Find your Travel buddy</h1></div>
+        <div class="pentagon-text short-para"></div>
+    </div>
+
+    <div id="cards" class="container-fluid">
+        <div id="card1">
+            <div class="card-body">
+                <div class="img-cnt">
+                    <img src="./assets/images/card1.png" alt="hoody-girl" width="200">
+                    <div class="person-name"><h1>Tao hatiba</h1></div>
+                </div>
+                <div class="desc-cnt">
+                    <div>
+                        <div><img src="./assets/images/location.png" alt="location" width="28"></div>
+                        <div><p>Dubai United Arab</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/commas.png" alt="comma" width="28"></div>
+                        <div><p>Wordl is full fo good peopele if you can't find</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/aim.png" alt="aim" width="28"></div>
+                        <div><p>Friends , Adventure , soulmare, job</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="card2">
+            <div class="card-body">
+                <div class="img-cnt">
+                    <img src="./assets/images/card2.png" alt="hoody-girl" width="200" height="189">
+                    <div class="person-name"><h1>Michle</h1></div>
+                </div>
+                <div class="desc-cnt">
+                    <div>
+                        <div><img src="./assets/images/location.png" alt="location" width="28"></div>
+                        <div><p>USA Loss Angeles</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/commas.png" alt="comma" width="28"></div>
+                        <div><p>Wordl is full fo good peopele if you can't find</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/aim.png" alt="aim" width="28"></div>
+                        <div><p>Friends , Adventure , soulmare, job</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="card3">
+            <div class="card-body">
+                <div class="img-cnt">
+                    <img src="./assets/images/card3.png" alt="hoody-girl" width="200" height="189">
+                    <div class="person-name"><h1>Han raj</h1></div>
+                </div>
+                <div class="desc-cnt">
+                    <div>
+                        <div><img src="./assets/images/location.png" alt="location" width="28"></div>
+                        <div><p>India Rajisthan</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/commas.png" alt="comma" width="28"></div>
+                        <div><p>Wordl is full fo good peopele if you can't find</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/aim.png" alt="aim" width="28"></div>
+                        <div><p>Friends , Adventure , soulmare, job</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="card4">
+            <div class="card-body">
+                <div class="img-cnt">
+                    <img src="./assets/images/card4.png" alt="hoody-girl" width="200" height="189">
+                    <div class="person-name"><h1>Victoria</h1></div>
+                </div>
+                <div class="desc-cnt">
+                    <div>
+                        <div><img src="./assets/images/location.png" alt="location" width="28"></div>
+                        <div><p>France, Paris</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/commas.png" alt="comma" width="28"></div>
+                        <div><p>Wordl is full fo good peopele if you can't find</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/aim.png" alt="aim" width="28"></div>
+                        <div><p>Friends , Adventure , soulmare, job</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="card5">
+            <div class="card-body">
+                <div class="img-cnt">
+                    <img src="./assets/images/card1.png" alt="hoody-girl" width="200">
+                    <div class="person-name"><h1>Tao hatiba</h1></div>
+                </div>
+                <div class="desc-cnt">
+                    <div>
+                        <div><img src="./assets/images/location.png" alt="location" width="28"></div>
+                        <div><p>Dubai United Arab</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/commas.png" alt="comma" width="28"></div>
+                        <div><p>Wordl is full fo good peopele if you can't find</p></div>
+                    </div>
+                    <div>
+                        <div><img src="./assets/images/aim.png" alt="aim" width="28"></div>
+                        <div><p>Friends , Adventure , soulmare, job</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="find-btn">
+        <button id="red-btn-1">Find Travel Patner</button>
+    </div>
+
+</section>
+
+<section id="sec3">
+
+    <div id="pentagon-head2" class="pentagon-head container-fluid">
+        <div class="pentagon-title">
+            <h1 class="long-para">Check of The Ultimate Global Travel Checklist With Your Partner</h1>
+        </div>
+        <!-- <p align="center">make your vacation a exciting and unforgetable experience</p> -->
+    </div>
+
+    <div id="cards-cnt" class="container">
+        
+        <div class="card2">
+            <img src="./assets/images/img1.png" alt="image1">
+        </div>
+        <div class="card2">
+            <img src="./assets/images/img2.png" alt="image2">
+        </div>
+        <div class="card2">
+            <img src="./assets/images/img3.png" alt="image3">
+        </div>
+        <div class="card2">
+            <img src="./assets/images/img4.png" alt="image4">
+        </div>
+        <div class="card2">
+            <img src="./assets/images/img5.png" alt="image5">
+        </div>
+        <div class="card2">
+            <img src="./assets/images/img6.png" alt="image6">
+        </div>
+
+    </div>
+
+    <div class="find-btn">
+        <button id="red-btn-2">Find Destination</button>
+    </div>
+
+</section>
+
+<section id="sec5">
+    <div id="pentagon-head4" class="pentagon-head container-fluid">
+        <div class="pentagon-title"><h1>Find your Travel buddy</h1></div>
+    </div>
+
+    <div id="sec5back">
+        <img src="./assets/images/se6-back.png" alt="xyz" width="50%">
+    </div>
+
+    <div id="sec5-desc" class="center-box">
+        <div id="go">
+            <div>
+                <img src="./assets/images/go.png" alt="go-image" width="40">
+            </div>
+            <div>
+                <p><b>Decide where you want to go and what you plan to visit</b></p>
+            </div>
+            <div>
+                <img src="./assets/images/go.png" alt="go-image" width="40">
+            </div>
+        </div>
+
+        <div id="shape">
+            <div>
+                <img src="./assets/images/shapes.png" alt="go-image" width="40">
+            </div>
+            <div>
+                <p><b>write all hobbies interests and plans in your personal profile</b></p>
+            </div>
+            <div>
+                <img src="./assets/images/shapes.png" alt="go-image" width="40">
+            </div>
+        </div>
+
+        <div id="usesr">
+            <div>
+                <img src="./assets/images/user.png" alt="go-image" width="45">
+            </div>
+            <div>
+                <p><b>Pick and post your best photos on your profile</b></p>
+            </div>
+            <div>
+                <img src="./assets/images/user.png" alt="go-image" width="45">
+            </div>
+        </div>
+
+        <div id="radio">
+            <div>
+                <img src="./assets/images/radio.png" alt="go-image" width="50">
+            </div>
+            <div>
+                <p><b>Choose a nickname that you would wnat your partner to know</b></p>
+            </div>
+            <div>
+                <img src="./assets/images/radio.png" alt="go-image" width="50">
+            </div>
+        </div>
+
+        <div id="candy">
+            <div>
+                <img src="./assets/images/bluecandy.png" alt="go-image" width="40">
+            </div>
+            <div>
+                <p><b>start your exiting journey of seeking the best partner that matches your vibe</b></p>
+            </div>
+            <div>
+                <img src="./assets/images/bluecandy.png" alt="go-image" width="40">
+            </div>
+        </div>
+        <div id="rgb-circles">
+            <img src="./assets/images/rgb-circles.png" alt="rgb circles" width="200">
+        </div>
+    </div>
+    <div class="find-btn">
+        <button id="red-btn-4">Join Us now</button>
+    </div>
+</section>
+
+<section id="sec6">
+    <div id="pentagon-5" class="pentagon-head container-fluid">
+        <div class="pentagon-title"><h1>Instagram Feeds</h1></div>
+    </div>
+    
+    <div id="body-cnt" class="center-box container row"> 
+        <div id="instafeed-cnt1" class="card-cnt col-md-4 mx-auto">
+            <div id="card1-img">
+                <img src="./assets/images/if-img1.png" alt="display pic" width="90">
+            </div>
+            <div id="card1-desc" class="card-desc">
+                    <div class="black-heading">
+                        <div class="left-head"><p> ibrahim , 29</p></div>
+                        <div class="right-head"><p>Aug 15, 2022</p></div>
+                    </div>
+                    <div class="blue-heading"><p>Dahab, Egypt</p></div>
+                    <div class="desc"><p>Looking for food company who like long road trips and exploring more than a place</p></div>
+                    <div class="btn-container">
+                        <button>Beach break</button>
+                        <button>Foodie tour</button>
+                        <button>Road trip</button>
+                        <button>Sightseeing</button>
+                    </div>
+            </div>
+        </div>
+
+        <div id="instafeed-cnt2" class="card-cnt col-md-4">
+            <div id="card2-img">
+                <img src="./assets/images/if-img2.png" alt="display pic" width="90">
+            </div>
+            <div id="card2-desc" class="card-desc">
+                    <div class="black-heading">
+                        <div class="left-head"><p> sudeep joshi , 30</p></div>
+                        <div class="right-head"><p>sep 14, 2022</p></div>
+                    </div>
+                    <div class="blue-heading"><p>Kuala Lumpur, Malaysia</p></div>
+                    <div class="desc"><p>Looking for food company who like long road trips and exploring more than a place</p></div>
+                    <div class="btn-container">
+                        <button>Sightseeing</button>
+                        <button>Shopping trip</button>
+                        <button>weeknd break</button>
+                        <!-- <button>Sightseeing</button> -->
+                    </div>
+            </div>
+        </div>
+
+        <div id="instafeed-cnt3" class="card-cnt col-md-4">
+            <div id="card3-img">
+                <img src="./assets/images/if-img3.png" alt="display pic" width="90">
+            </div>
+            <div id="card3-desc" class="card-desc">
+                    <div class="black-heading">
+                        <div class="left-head"><p> irene , 24</p></div>
+                        <div class="right-head"><p>Aug 12, 2022</p></div>
+                    </div>
+                    <div class="blue-heading"><p>Istanbul, Turkey</p></div>
+                    <div class="desc"><p>Looking for food company who like long road trips and exploring more than a place</p></div>
+                    <div class="btn-container">
+                        <button>Beach break</button>
+                        
+                    </div>
+            </div>
+        </div>
+
+        <div id="instafeed-cnt4" class="card-cnt col-md-4">
+            <div id="card4-img">
+                <img src="./assets/images/if-img4.png" alt="display pic" width="90">
+            </div>
+            <div id="card4-desc" class="card-desc">
+                    <div class="black-heading">
+                        <div class="left-head"><p> Amir ansari , 29</p></div>
+                        <div class="right-head"><p>Oct 02, 2022</p></div>
+                    </div>
+                    <div class="blue-heading"><p>Thiland</p></div>
+                    <div class="desc"><p>Looking for food company who like long road trips and exploring more than a place</p></div>
+                    <div class="btn-container">
+                        <button>Beach break</button>
+                        <button>Foodie tour</button>
+                        <button>Road trip</button>
+                        <button>Sightseeing</button>
+                    </div>
+            </div>
+        </div>
+
+        <div id="instafeed-cnt5" class="card-cnt col-md-4">
+            <div id="card5-img">
+                <img src="./assets/images/if-img5.png" alt="display pic" width="90">
+            </div>
+            <div id="card5-desc" class="card-desc">
+                    <div class="black-heading">
+                        <div class="left-head"><p> Emily , 38</p></div>
+                        <div class="right-head"><p>Aug 13, 2022</p></div>
+                    </div>
+                    <div class="blue-heading"><p>United States</p></div>
+                    <div class="desc"><p>Looking for food company who like long road trips and exploring more than a place</p></div>
+                    <div class="btn-container">
+                        <button>Beach break</button>
+                        
+                    </div>
+            </div>
+        </div>
+
+        <div id="instafeed-cnt6" class="card-cnt col-md-4">
+            <div id="card6-img">
+                <img src="./assets/images/if-img6.png" alt="display pic" width="90">
+            </div>
+            <div id="card1-desc" class="card-desc">
+                    <div class="black-heading">
+                        <div class="left-head"><p> Cecilia , 32</p></div>
+                        <div class="right-head"><p>Aug 14, 2022</p></div>
+                    </div>
+                    <div class="blue-heading"><p>Lusaka , Zambia</p></div>
+                    <div class="desc"><p>Looking for food company who like long road trips and exploring more than a place</p></div>
+                    <div class="btn-container">
+                        <button>sport </button>
+                        <button>Road trip</button>
+                        <button>Shopping trip</button>
+                        <button>weeknd break</button>
+                    </div>
+            </div>
+        </div>
+
+        <div id="instafeed-cnt7" class="card-cnt col-md-4">
+            <div id="card7-img">
+                <img src="./assets/images/if-img7.png" alt="display pic" width="90">
+            </div>
+            <div id="card7-desc" class="card-desc">
+                    <div class="black-heading">
+                        <div class="left-head"><p> Manilyn , 30</p></div>
+                        <div class="right-head"><p>Aug 09 2022</p></div>
+                    </div>
+                    <div class="blue-heading"><p>United Arab Emirates</p></div>
+                    <div class="desc"><p>Looking for food company who like long road trips and exploring more than a place</p></div>
+                    <div class="btn-container">
+                        <button>Foodie tour</button>
+                        
+                    </div>
+            </div>
+        </div>
+
+        <div id="instafeed-cnt8" class="card-cnt col-md-4">
+            <div id="card8-img">
+                <img src="./assets/images/if-img8.png" alt="display pic" width="90">
+            </div>
+            <div id="card8-desc" class="card-desc">
+                    <div class="black-heading">
+                        <div class="left-head"><p> Andres , 40</p></div>
+                        <div class="right-head"><p>Aug 15, 2022</p></div>
+                    </div>
+                    <div class="blue-heading"><p>Italy</p></div>
+                    <div class="desc"><p>I am going on a crusie trip starting in roam and ending at barcelona</p><p>&#128512;</p></div>
+                    <div class="btn-container">
+                        <button>Cruise</button>
+                        
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="find-btn">
+        <button id="red-btn-5" name="read-more" class="light-btn">Read More</button>
+    </div>
+
+</section>
+
+<section id="sec7">
+    <div id="subscribe-form-cnt" class=" container">
+        <div class="center-box">
+            <div id="form-head">
+                <h1>Subscribe to get information, latest news and other interesting offers about Cobham</h1>
+            </div>         
+                <form id="form2">
+                    <div id="form-body">   
+                        <div>
+                            <p>Your email</p>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="email" placeholder="myloveexpress@gmail.com">
+                            </div>
+                            <div id="stylish-edge">
+
+                            </div>
+                            <div>
+                                <input type="submit" name="subscribe" id="subscribe-btn" value="Subscribe">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="logo-cnt">
+                <img src="./assets/images/telegram.png" alt="telegram-logo" width="54">
+            </div>
+        
+        <div id="main-cnt">
+            <div id="circle-cnt">
+                <div id="cir1"></div>
+                <div id="cir2"></div>
+                <div id="cir3"></div>
+                <div id="cir4"></div>
+                <div id="cir5"></div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+</section>
+
+<section id="sec7">
+    <div id="banner" class="container">
+        <div class="col-md-2">
+            <img src="./assets/images/axon.png" alt="axon" width="75%">
+        </div>
+        <div class="col-md-2">
+            <img src="./assets/images/jetstar.png" alt="jetstar" width="75%">
+        </div>
+        <div class="col-md-2">
+            <img src="./assets/images/expedia.png" alt="expedia" width="80%">
+        </div>
+        <div class="col-md-2">
+            <img src="./assets/images/quantas.png" alt="quantas" width="86%">
+        </div>
+        <div class="col-md-2">
+            <img src="./assets/images/alitia.png" alt="alitia" width="80%">
+        </div>
+    </div>
+</section>
+
+<footer id="sec8" class="container-fluid">
+    <div id="ft-body" class="center-box">
+        <div id="col1" class="col-md-3">
+            <ul>
+                <li><h3>MyLoveExpress</h3></li>
+                <li>Book your trip in minute, get full Control for much longer</li>
+            </ul>
+        </div>
+        <div id="col2" class="col-md-2">
+            <ul>
+                <li><b>Company</b></li>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Mobile</li>
+            </ul>
+        </div>
+        <div id="col3" class="col-md-2">
+            <ul>
+                <li><b>Contact</b></li>
+                <li>Help/FAQ</li>
+                <li>Press</li>
+                <li>Affilates</li>
+            </ul>
+        </div>
+        <div id="col4" class="col-md-2">
+            <ul>
+                <li><b>More</b></li>
+                <li>Airlinefees</li>
+                <li>Airline</li>
+                <li>Low fare tips</li>
+            </ul>
+        </div>
+        <div id="col5" class="col-md-3">
+            <div id="stores-img">
+                <img src="./assets/images/social-media2.png" alt="facebook-twitter" width="192">
+            </div>
+            <div><h3>Discover out app</h3></div>
+            <div>
+                <img src="./assets/images/play-store.png" alt="play-store" width="122">
+                <img src="./assets/images/apple-store.png" alt="apple-store" width="118">
+            </div>
+        </div>
+    </div>
+    <div id="copyright-cnt" class="col-md-12">
+        <p><b>All rights myloveexpress@gmail.com</b></p>
+    </div>
+</footer>
+
+</body>
+</html>
